@@ -1,0 +1,106 @@
+/*Menu bar desing*/
+#MenuBar{
+    -fx-background-color: #0e0d0d9f; 
+    
+}
+
+#MenuHistory{
+    -fx-background-color: rgb(149, 146, 146);
+    -fx-background-radius: 5px; 
+    -fx-color:white;
+}
+
+/*Main window desing application*/
+#MainWindow{
+    -fx-background-color: #797a77;
+}
+
+/*Input Text bar style*/
+#InputText{
+    -fx-background-color: lightgray;
+}
+
+#Button1{
+    -fx-background-radius: 12px;
+    -fx-background-color: #0e0d0d9f;
+}
+
+#Button2{
+    -fx-background-radius: 12px;
+    -fx-background-color: #0e0d0d9f;
+}
+
+#Button3{
+    -fx-background-radius: 12px;
+    -fx-background-color: #0e0d0d9f;
+}
+
+#Button4{
+    -fx-background-radius: 12px;
+    -fx-background-color: #0e0d0d9f;
+}
+
+#Button5{
+    -fx-background-radius: 12px;
+    -fx-background-color: #0e0d0d9f;
+}
+
+#Button6{
+    -fx-background-radius: 12px;
+    -fx-background-color: #0e0d0d9f;
+}
+
+#Button7{
+    -fx-background-radius: 12px;
+    -fx-background-color: #0e0d0d9f;
+}
+
+#Button8{
+    -fx-background-radius: 12px;
+    -fx-background-color: #0e0d0d9f;
+}
+
+#Button9{
+    -fx-background-radius: 12px;
+    -fx-background-color: #0e0d0d9f;
+}
+
+#ButtonAC{
+    -fx-background-radius: 12px;
+    -fx-background-color: #71cc5a;
+}
+
+#ButtonModulo{
+    -fx-background-radius: 12px;
+    -fx-background-color: #e1ce29;
+}
+
+#ButtonClear{
+    -fx-background-radius: 12px;
+    -fx-background-color: #d17533;
+}
+
+#ButtonExpand{
+    -fx-background-radius: 12px;
+    -fx-background-color: #fdaa0f;
+}
+
+#ButtonDivide{
+    -fx-background-radius: 12px;
+    -fx-background-color: #fdaa0f;
+}
+
+#ButtonAdd{
+    -fx-background-radius: 12px;
+    -fx-background-color: #fdaa0f;
+}
+
+#ButtonSub{
+    -fx-background-radius: 12px;
+    -fx-background-color: #fdaa0f;
+}
+
+#ButtonMultiply{
+    -fx-background-radius: 12px;
+    -fx-background-color: #fdaa0f;
+}
