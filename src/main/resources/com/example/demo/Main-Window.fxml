@@ -11,11 +11,6 @@
 
 <Pane id="MainWindow" fx:id="MainWindow" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="277.0" styleClass="MainWindow" stylesheets="@Main-Window.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
    <children>
-      <MenuBar fx:id="MenuBar" prefHeight="28.0" prefWidth="277.0">
-         <menus>
-            <Menu id="MenuHistory" fx:id="MenuHistory" mnemonicParsing="false" text="History" />
-         </menus>
-      </MenuBar>
       <TextField fx:id="InputText" alignment="BOTTOM_RIGHT" editable="false" layoutX="4.0" layoutY="31.0" prefHeight="56.0" prefWidth="270.0">
          <font>
             <Font size="30.0" />

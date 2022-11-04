@@ -4,7 +4,9 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
@@ -14,11 +16,11 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Main-Window.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 277, 350);
-
+        Scene scene = new Scene(fxmlLoader.load(), 363, 424);
         stage.setTitle("Calculator");
         stage.setScene(scene);
         stage.show();
+        stage.setResizable(false);
         HelloController controller = fxmlLoader.getController();
         scene.setOnKeyPressed(event -> {
             System.out.println(event.getCode());

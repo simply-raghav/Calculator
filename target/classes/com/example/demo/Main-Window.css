@@ -1,106 +1,172 @@
-/*Menu bar desing*/
-#MenuBar{
-    -fx-background-color: #0e0d0d9f; 
-    
-}
-
-#MenuHistory{
-    -fx-background-color: rgb(149, 146, 146);
+#History{
+    -fx-background-color: transperant;
+    -fx-background-image: url('history.png');
+    -fx-background-repeat:no-repeat;
+    -fx-background-position: center;
     -fx-background-radius: 5px; 
-    -fx-color:white;
 }
+#History:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 /*Main window desing application*/
 #MainWindow{
-    -fx-background-color: #797a77;
+    -fx-background-color: #292929;
 }
 
 /*Input Text bar style*/
 #InputText{
-    -fx-background-color: lightgray;
+    -fx-background-color: #292929;
+    -fx-text-fill:white;
+    -fx-highlight-fill: derive(-fx-control-inner-background,-20%);
+    -fx-highlight-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+}
+
+#InputText1{
+    -fx-background-color: #292929;
+    -fx-text-fill:white;
+    -fx-highlight-fill: derive(-fx-control-inner-background,-20%);
+    -fx-highlight-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
 }
 
 #Button1{
-    -fx-background-radius: 12px;
-    -fx-background-color: #0e0d0d9f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+
+#Button1:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #Button2{
-    -fx-background-radius: 12px;
-    -fx-background-color: #0e0d0d9f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+#Button2:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #Button3{
-    -fx-background-radius: 12px;
-    -fx-background-color: #0e0d0d9f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+#Button3:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #Button4{
-    -fx-background-radius: 12px;
-    -fx-background-color: #0e0d0d9f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+#Button4:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #Button5{
-    -fx-background-radius: 12px;
-    -fx-background-color: #0e0d0d9f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+#Button5:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #Button6{
-    -fx-background-radius: 12px;
-    -fx-background-color: #0e0d0d9f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+#Button6:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #Button7{
-    -fx-background-radius: 12px;
-    -fx-background-color: #0e0d0d9f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+#Button7:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #Button8{
-    -fx-background-radius: 12px;
-    -fx-background-color: #0e0d0d9f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+#Button8:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #Button9{
-    -fx-background-radius: 12px;
-    -fx-background-color: #0e0d0d9f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+#Button9:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #ButtonAC{
-    -fx-background-radius: 12px;
-    -fx-background-color: #71cc5a;
+    -fx-background-radius: 8px;
+    -fx-background-color: #5aed4d44;
 }
+#ButtonAC:hover{
+    -fx-background-color: linear-gradient(#9af891c0, #9af891c8);
+    }
 
 #ButtonModulo{
-    -fx-background-radius: 12px;
-    -fx-background-color: #e1ce29;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+#ButtonModulo:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #ButtonClear{
-    -fx-background-radius: 12px;
-    -fx-background-color: #d17533;
+    -fx-background-radius: 8px;
+    -fx-background-color: #fb7d7d86;
 }
+#ButtonClear:hover{
+    -fx-background-color: linear-gradient(#fb7d7dbc, #fb7d7dc8);
+    }
 
 #ButtonExpand{
-    -fx-background-radius: 12px;
-    -fx-background-color: #fdaa0f;
+    -fx-background-color: #bcbcbc44;
+    -fx-background-image: url('expand.png');
+    -fx-background-repeat:no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 8px;
 }
+#ButtonExpand:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #ButtonDivide{
-    -fx-background-radius: 12px;
-    -fx-background-color: #fdaa0f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+#ButtonDivide:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #ButtonAdd{
-    -fx-background-radius: 12px;
-    -fx-background-color: #fdaa0f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+#ButtonAdd:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #ButtonSub{
-    -fx-background-radius: 12px;
-    -fx-background-color: #fdaa0f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #bcbcbc44;
 }
+#ButtonSub:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
 
 #ButtonMultiply{
-    -fx-background-radius: 12px;
-    -fx-background-color: #fdaa0f;
+    -fx-background-radius: 8px;
+    -fx-background-color: #fffb82d0;
 }
+#ButtonMultiply:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
