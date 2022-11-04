@@ -2,6 +2,7 @@ package com.example.demo;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
@@ -13,7 +14,6 @@ public class HelloController {
 
     @FXML
     private TextField InputText;
-
     private String firstnumber = "";
 
     private String display = "";
