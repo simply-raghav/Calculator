@@ -8,6 +8,7 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,14 +17,18 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Main-Window.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 363, 424);
+        Scene scene = new Scene(fxmlLoader.load(), 290, 348);
         stage.setTitle("Calculator");
         stage.setScene(scene);
         stage.show();
         stage.setResizable(false);
         HelloController controller = fxmlLoader.getController();
+        controller.AllClear(new ActionEvent());
+        controller.InputText.setFont(new Font(24));
+        controller.InputText.setText("0");
         scene.setOnKeyPressed(event -> {
-            System.out.println(event.getCode());
+            System.out.println(event.getCode() + "\t" + event.getText());
+
             switch (event.getCode()){
                 case DIGIT0:
                 case NUMPAD0: controller.PressedZero(new ActionEvent());
@@ -65,7 +70,10 @@ public class HelloApplication extends Application {
                     break;
                 case DIVIDE: controller.Divide(new ActionEvent());
                     break;
+                case EQUALS:
                 case ENTER: controller.Result(new ActionEvent());
+                break;
+                case BACK_SPACE:controller.backslash(new ActionEvent());
             }
         });
     }

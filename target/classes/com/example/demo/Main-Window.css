@@ -11,12 +11,12 @@
 
 /*Main window desing application*/
 #MainWindow{
-    -fx-background-color: #1C1C1C;
+    -fx-background-color: #292929;
 }
 
 /*Input Text bar style*/
 #InputText{
-    -fx-background-color: #1C1C1C;
+    -fx-background-color: #292929;
     -fx-text-fill:white;
     -fx-highlight-fill: derive(-fx-control-inner-background,-20%);
     -fx-highlight-text-fill: -fx-text-inner-color;
@@ -24,7 +24,7 @@
 }
 
 #InputText1{
-    -fx-background-color: #1C1C1C;
+    -fx-background-color: #292929;
     -fx-text-fill:white;
     -fx-highlight-fill: derive(-fx-control-inner-background,-20%);
     -fx-highlight-text-fill: -fx-text-inner-color;
@@ -114,10 +114,10 @@
 
 #ButtonModulo{
     -fx-background-radius: 8px;
-    -fx-background-color: #FF9500;
+    -fx-background-color: #bcbcbc44;
 }
 #ButtonModulo:hover{
-    -fx-background-color: linear-gradient(#ffb957, #ffb957);
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
     }
 
 #ButtonClear{
@@ -141,40 +141,32 @@
 
 #ButtonDivide{
     -fx-background-radius: 8px;
-    -fx-background-color: #FF9500;
+    -fx-background-color: #bcbcbc44;
 }
 #ButtonDivide:hover{
-    -fx-background-color: linear-gradient(#ffb957, #ffb957);
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
     }
 
 #ButtonAdd{
     -fx-background-radius: 8px;
-    -fx-background-color: #FF9500;
+    -fx-background-color: #bcbcbc44;
 }
 #ButtonAdd:hover{
-    -fx-background-color: linear-gradient(#ffb957, #ffb957);
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
     }
 
 #ButtonSub{
     -fx-background-radius: 8px;
-    -fx-background-color: #FF9500;
+    -fx-background-color: #bcbcbc44;
 }
 #ButtonSub:hover{
-    -fx-background-color: linear-gradient(#ffb957, #ffb957);
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
     }
 
 #ButtonMultiply{
     -fx-background-radius: 8px;
-    -fx-background-color: #FF9500;
+    -fx-background-color: #fffb82d0;
 }
 #ButtonMultiply:hover{
-    -fx-background-color: linear-gradient(#ffb957, #ffb957);
-    }
-
-#ButtonEqual{
-    -fx-background-radius: 8px;
-    -fx-background-color: #FF9500;
-}
-#ButtonEqual:hover{
-    -fx-background-color: linear-gradient(#ffb957, #ffb957);
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
     }

@@ -2,48 +2,45 @@ package com.example.demo;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Group;
 import javafx.scene.control.Button;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuBar;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HelloController {
 
+    ArrayList<Character> operators = new ArrayList<>(List.of('+','-','*','/'));
 
+
+    boolean newCal=true;
     @FXML
-    private TextField InputText;
-    private String firstnumber = "";
-
-    private String display = "";
-    private Integer choice = 0;
-
-    private Integer operand1 = 0;
-
-    private Integer operand2 = 0;
-
-    private  Integer temp = 0;
+    Button ButtonDot, Button1, Button2, Button3, Button4, Button5, Button6,Button7,Button8, Button9, Button0;
     @FXML
-    private Pane MainWindow;
+    public TextField InputText;
 
-    @FXML
-    private MenuBar MenuBar;
-
-    @FXML
-    private Menu MenuHistory;
-
+    public String display = "";
     @FXML
     void PressedOne(ActionEvent event) {
-        firstnumber = firstnumber + "1";
+
+        if(newCal){
+            newCal=false;
+            AllClear(new ActionEvent());
+        }
         display = display + "1";
         InputText.setText(display);
 
     }
 
+
     @FXML
     void PressedTwo(ActionEvent event) {
-        firstnumber = firstnumber + "2";
+        if(newCal){
+            newCal=false;
+            AllClear(new ActionEvent());
+        }
         display = display + "2";
         InputText.setText(display);
 
@@ -51,57 +48,81 @@ public class HelloController {
 
     @FXML
     void PressedThree(ActionEvent event) {
-        firstnumber = firstnumber + "3";
+        if(newCal){
+            newCal=false;
+            AllClear(new ActionEvent());
+        }
         display = display + "3";
         InputText.setText(display);
     }
 
     @FXML
     void PressedFour(ActionEvent event) {
-        firstnumber = firstnumber + "4";
+        if(newCal){
+            newCal=false;
+            AllClear(new ActionEvent());
+        }
         display = display + "4";
         InputText.setText(display);
     }
 
     @FXML
     void PressedFive(ActionEvent event) {
-        firstnumber = firstnumber + "5";
+        if(newCal){
+            newCal=false;
+            AllClear(new ActionEvent());
+        }
         display = display + "5";
         InputText.setText(display);
     }
 
     @FXML
     void PressedSix(ActionEvent event) {
-        firstnumber = firstnumber + "6";
+        if(newCal){
+            newCal=false;
+            AllClear(new ActionEvent());
+        }
         display = display + "6";
         InputText.setText(display);
     }
 
     @FXML
     void PressedSeven(ActionEvent event) {
-        firstnumber = firstnumber + "7";
+        if(newCal){
+            newCal=false;
+            AllClear(new ActionEvent());
+        }
         display = display + "7";
         InputText.setText(display);
     }
 
     @FXML
     void PressedEight(ActionEvent event) {
-        firstnumber = firstnumber + "8";
+        if(newCal){
+            newCal=false;
+            AllClear(new ActionEvent());
+        }
         display = display + "8";
         InputText.setText(display);
     }
 
     @FXML
     void PressedNine(ActionEvent event) {
-        firstnumber = firstnumber + "9";
+        if(newCal){
+            newCal=false;
+            AllClear(new ActionEvent());
+        }
         display = display + "9";
         InputText.setText(display);
     }
 
     @FXML
     void PressedZero(ActionEvent event) {
-        if(!firstnumber.equals("0")) {
-            firstnumber = firstnumber + "0";
+        if(newCal){
+            newCal=false;
+            AllClear(new ActionEvent());
+        }
+        if(!display.equals("0")) {
             display = display + "0";
             InputText.setText(display);
         }
@@ -109,113 +130,77 @@ public class HelloController {
 
     @FXML
     void Addition(ActionEvent event) {
-        choice = 1;
+        if(operators.contains(display.charAt(display.length()-1))){
+            display = display.substring(0, display.length()-1);
+        }
+        newCal=false;
         display = display + "+";
-        operand1=Integer.valueOf(firstnumber);
-        firstnumber = "";
         InputText.setText(display);
     }
 
     @FXML
     void Subtraction(ActionEvent event) {
-        choice = 2;
+        if(operators.contains(display.charAt(display.length()-1))){
+            display = display.substring(0, display.length()-1);
+        }
+        newCal=false;
         display = display + "-";
-        operand1=Integer.valueOf(firstnumber);
-        firstnumber = "";
         InputText.setText(display);
     }
 
     @FXML
     void Multiply(ActionEvent event) {
-        choice = 3;
-        display = display + "×";
-        operand1=Integer.valueOf(firstnumber);
-        firstnumber = "";
+        if(operators.contains(display.charAt(display.length()-1))){
+            display = display.substring(0, display.length()-1);
+        }
+        newCal=false;
+        display = display + "*";
         InputText.setText(display);
     }
 
     @FXML
     void Divide(ActionEvent event) {
-        choice = 4;
+        if(operators.contains(display.charAt(display.length()-1))){
+            display = display.substring(0, display.length()-1);
+        }
+        newCal=false;
         display = display + "/";
-        operand1=Integer.valueOf(firstnumber);
-        firstnumber = "";
         InputText.setText(display);
     }
 
     @FXML
     void backslash(ActionEvent event){
+        if(display.length()>0){
+            display = display.substring(0,display.length()-1);
+            InputText.setText(display);
+        }
+        if(newCal){
+            display = "";
+            InputText.setText(display);
+
+        }
     }
     @FXML
     void AllClear(ActionEvent event) {
-        firstnumber = "";
-        display = "";
-        operand1 = 0;
-        operand2 = 0;
+        display = "0";
         InputText.setText(display);
+    }
+
+
+    public void addDot(ActionEvent event) {
+
     }
 
     @FXML
     void Result(ActionEvent event) {
-        if(firstnumber.length()==0){
-            operand2=0;
-        }else{
-            operand2=Integer.valueOf(firstnumber);
+        EvaluateExpression expression = new EvaluateExpression();
+        if(display.charAt(0)=='-'){
+            display = "0" + display;
         }
-        if(choice == 1){
-            temp = operand1 + operand2;
-            InputText.setText(String.valueOf(temp));
-        } else if (choice == 2) {
-            temp = operand1 - operand2;
-            InputText.setText(String.valueOf(temp));
-        }
-        else if (choice == 3) {
-            temp = operand1 * operand2;
-            InputText.setText(String.valueOf(temp));
-        }else if(choice == 4){
-            temp=operand1/operand2;
-            InputText.setText(String.valueOf(temp));
-        }
-        firstnumber = String.valueOf(temp);
-        display = String.valueOf(temp);
-
+        double ans = expression.evaluate(display);
+        display = String.valueOf(ans);
+        InputText.setText(display);
+        newCal = true;
     }
-//    @FXML
-//     void keyPressed(KeyEvent event){
-//        System.out.println(event.getText());
-//        switch (event.getCode().toString()){
-//            case "KEYPAD1": PressedOne(new ActionEvent());
-//                break;
-//            case "2": PressedTwo(new ActionEvent());
-//                break;
-//            case "3": PressedThree(new ActionEvent());
-//                break;
-//            case "4": PressedFour(new ActionEvent());
-//                break;
-//            case "5": PressedFive(new ActionEvent());
-//                break;
-//            case "6": PressedSix(new ActionEvent());
-//                break;
-//            case "7": PressedSeven(new ActionEvent());
-//                break;
-//            case "8": PressedEight(new ActionEvent());
-//                break;
-//            case "9": PressedNine(new ActionEvent());
-//                break;
-//            case "0": PressedZero(new ActionEvent());
-//                break;
-//            case "+": Addition(new ActionEvent());
-//                break;
-//            case "-": Subtraction(new ActionEvent());
-//                break;
-//            case "*": Multiply(new ActionEvent());
-//                break;
-//            case "/": Divide(new ActionEvent());
-//                break;
-//
-//
-//
-//
-//        }
-//    }
+
 }
