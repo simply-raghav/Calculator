@@ -1,18 +1,23 @@
-/*Main window desing application*/
-#MainWindow{
+#ScientificWindow{
     -fx-background-color: #1C1C1C;
 }
 
 #History{
     -fx-background-color: transparent;
-    -fx-background-image: url('history.png');
+    /*-fx-background-image: url('history.png');*/
     -fx-background-repeat:no-repeat;
     -fx-background-position: center;
-    -fx-background-radius: 5px;
+    -fx-background-radius: 5px; 
 }
 #History:hover{
     -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
     }
+
+#History .cell{
+    -fx-font-family: arial;
+    -fx-font-size: 16px;
+    -fx-text-fill: #ffffff; 
+}
 
 
 /*Input Text bar style*/
@@ -34,7 +39,7 @@
 
 #Button1{
     -fx-background-radius: 8px;
-    -fx-background-color: #bcbcbc44;
+    -fx-background-color: #c4c0c081;
 }
 
 #Button1:hover{
@@ -43,7 +48,7 @@
 
 #Button2{
     -fx-background-radius: 8px;
-    -fx-background-color: #bcbcbc44;
+    -fx-background-color: #c4c0c081;
 }
 #Button2:hover{
     -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
@@ -51,7 +56,7 @@
 
 #Button3{
     -fx-background-radius: 8px;
-    -fx-background-color: #bcbcbc44;
+    -fx-background-color: #c4c0c081;
 }
 #Button3:hover{
     -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
@@ -59,7 +64,7 @@
 
 #Button4{
     -fx-background-radius: 8px;
-    -fx-background-color: #bcbcbc44;
+    -fx-background-color: #c4c0c081;
 }
 #Button4:hover{
     -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
@@ -67,7 +72,7 @@
 
 #Button5{
     -fx-background-radius: 8px;
-    -fx-background-color: #bcbcbc44;
+    -fx-background-color: #c4c0c081;
 }
 #Button5:hover{
     -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
@@ -75,7 +80,7 @@
 
 #Button6{
     -fx-background-radius: 8px;
-    -fx-background-color: #bcbcbc44;
+    -fx-background-color: #c4c0c081;
 }
 #Button6:hover{
     -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
@@ -83,7 +88,7 @@
 
 #Button7{
     -fx-background-radius: 8px;
-    -fx-background-color: #bcbcbc44;
+    -fx-background-color: #c4c0c081;
 }
 #Button7:hover{
     -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
@@ -91,7 +96,7 @@
 
 #Button8{
     -fx-background-radius: 8px;
-    -fx-background-color: #bcbcbc44;
+    -fx-background-color: #c4c0c081;
 }
 #Button8:hover{
     -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
@@ -99,7 +104,7 @@
 
 #Button9{
     -fx-background-radius: 8px;
-    -fx-background-color: #bcbcbc44;
+    -fx-background-color: #c4c0c081;
 }
 #Button9:hover{
     -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
@@ -113,7 +118,7 @@
     -fx-background-color: linear-gradient(#9af891c0, #9af891c8);
     }
 
-#ButtonModulo{
+#Mod{
     -fx-background-radius: 8px;
     -fx-background-color: #FF9500;
 }
@@ -130,7 +135,7 @@
     }
 
 #ButtonExpand{
-    -fx-background-color: #bcbcbc44;
+    -fx-background-color: #c4c0c081;
     -fx-background-image: url('expand.png');
     -fx-background-repeat:no-repeat;
     -fx-background-position: center;
@@ -178,4 +183,73 @@
 }
 #ButtonEqual:hover{
     -fx-background-color: linear-gradient(#ffb957, #ffb957);
+    }
+
+#TrigonometricFunctionButton{
+    -fx-background-radius: 8px;
+    -fx-background-color: #1c1c1c00;
+
+}
+#TrigonometricFunctionButton:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
+
+#MS{
+    -fx-background-radius: 10px;
+    -fx-background-color: #504f4f91;
+
+}
+#MS:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
+
+#Memory{
+    -fx-background-radius: 30px;
+    -fx-background-color: #4f4f4fa6;
+
+}
+#Memory:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
+
+#MMinus{
+    -fx-background-radius: 30px;
+    -fx-background-color: #4f4f4fa6;
+
+}
+#MMinus:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
+
+#MPlus{
+    -fx-background-radius: 30px;
+    -fx-background-color: #4f4f4fa6;
+}
+#MPlus:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
+
+#MR{
+    -fx-background-radius: 30px;
+    -fx-background-color: #4f4f4fa6;
+}
+#MR:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
+
+#MC{
+    -fx-background-radius: 30px;
+    -fx-background-color: #4f4f4fa6;
+}
+#MC:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
+    }
+
+#Function{
+    -fx-background-radius: 8px;
+    -fx-background-color: #1c1c1c00;
+
+}
+#Function:hover{
+    -fx-background-color: linear-gradient(#b4b4b48e, #d3d3d3a5);
     }
